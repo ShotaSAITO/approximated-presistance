@@ -24,4 +24,4 @@ idx = kmedoids((1:size(Lp,1))', k, 'Distance', @(ZI, ZJ) D2(ZJ, ZI));
 %computing error
 err = 1 - AccMeasure(Y,idx)/100;
 
-fprintf('k:%d,c:%f,p%f,err:%f\n',kk,c,p,err)
+fprintf('k:%d,sigma:%f,p%f,err:%f\n',kk,sigma,p,err)
